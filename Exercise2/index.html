@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Sederhana</title>
+</head>
+
+<body>
+    <div class="container mt-3 pt-5">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm shadow p-4 m-2 rounded" style="background-color: lightgrey; border-radius: 12px;">
+                <h2 class="text-center"> Kalkulator</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <form name="formAngka">
+                                <td colspan="4"><input type="text" readonly name="isiText"
+                                        class="form-control m-auto text-right">
+                                </td>
+                            </form>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="del()">Del</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="hapusAll()">C</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins('/')">/</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins('*')">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(1)">1</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(2)">2</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(3)">3</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(4)">4</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(5)">5</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(6)">6</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(7)">7</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(8)">8</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins(9)">9</button></td>
+                            <td><button type="button" class="btn btn-secondary" onclick="ins('.')">.</button></td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" class="btn btn-secondary" onclick="ins(0)"
+                                    style="width: 140px;">0</button>
+                            </td>
+                            <td colspan="2"><button type="button" class="btn btn-secondary" onclick="samaDengan()"
+                                    style="width: 140px;">=</button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="file.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
